@@ -2,6 +2,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 using TMPro;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.MPE;
 
 
 public class PlayerControlerA : MonoBehaviour
@@ -84,8 +87,20 @@ public class PlayerControlerA : MonoBehaviour
         {
 
             ghost.SetActive(false);
+            StartCoroutine(Ghost(2));
 
         }
+
+        PauseGame();
+
+    }
+
+    private IEnumerator Ghost(float waitTime)
+    {
+
+        
+        yield return new WaitForSeconds(waitTime);
+        ghost.SetActive(true);
 
     }
 

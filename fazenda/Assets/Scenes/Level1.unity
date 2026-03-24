@@ -999,11 +999,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControlA
   speed: 20
-  xRange: 15
+  xRange: 17
   projectilePrefab: {fileID: 3368550998252044939, guid: 3e72a3cfb85b1344ca8ceae8fa56d1d4, type: 3}
   InputActions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   Pausado: {fileID: 1906977497}
-  ghost: {fileID: 0}
+  ghost: {fileID: 1480797370}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1149,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195273466}
   m_CullTransparentMesh: 1
+--- !u!1 &1480797370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 173222, guid: 3cf7f489270aac84fb12901330960a5b, type: 3}
+  m_PrefabInstance: {fileID: 1761695641}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0

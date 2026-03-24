@@ -799,7 +799,7 @@
                 {
                     "name": "",
                     "id": "7ae73e2f-fb15-45c2-b41d-478c430d4b51",
-                    "path": "<Keyboard>/tab",
+                    "path": "<Keyboard>/ctrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -888,7 +888,7 @@
                 {
                     "name": "Pause",
                     "type": "Button",
-                    "id": "cc1c88a8-afd8-46e2-bb7d-27d3e0b4197b",
+                    "id": "1d1ecf4a-9c91-48eb-8c3b-5f34533dde36",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -1041,11 +1041,11 @@
                 },
                 {
                     "name": "",
-                    "id": "ae117789-34d9-4dab-8c23-da9969a49222",
+                    "id": "e1156388-61ce-41c8-b972-52235636309a",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
+                    "groups": "",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
