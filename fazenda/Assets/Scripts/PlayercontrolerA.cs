@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 using TMPro;
 
 
-public class PlayerControlA : MonoBehaviour
+public class PlayerControlerA : MonoBehaviour
 {
 
     public float speed = 20f;
@@ -14,17 +14,15 @@ public class PlayerControlA : MonoBehaviour
     public InputActionAsset InputActions;
     private InputAction moveAction;
     private InputAction fireAction;
-    private InputAction pauseAction;
+    private InputAction pauseActionPlayer;
+    private InputAction pauseActionUI;
     private InputAction ghostAction;
-    private bool Pause = false;
     public GameObject Pausado;
     public GameObject ghost;
 
     void Start()
     {
 
-        Pause = false;
-        Pausado.SetActive(false);
         ghost = GameObject.Find("/Player/SF_Character_FarmersWife");
 
     }
@@ -33,10 +31,6 @@ public class PlayerControlA : MonoBehaviour
     {
 
         InputActions.FindActionMap("Player").Enable();
-        InputActions.FindActionMap("UI").Disable();
-        Pause = false;
-        pauseAction = InputSystem.actions.FindAction("Pause");
-        Pausado.SetActive(false);
 
     }
 
@@ -44,10 +38,6 @@ public class PlayerControlA : MonoBehaviour
     {
 
         InputActions.FindActionMap("Player").Disable();
-        InputActions.FindActionMap("UI").Enable();
-        Pause = true;
-        pauseAction = InputSystem.actions.FindAction("Pause");
-        Pausado.SetActive(true);
 
     }
 
@@ -57,6 +47,8 @@ public class PlayerControlA : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         fireAction = InputSystem.actions.FindAction("Jump");
         ghostAction = InputSystem.actions.FindAction("ghost");
+        pauseActionPlayer = InputSystem.actions.FindAction("Player/Pause");
+        pauseActionUI = InputSystem.actions.FindAction("UI/Pause");
 
     }
 
@@ -87,27 +79,32 @@ public class PlayerControlA : MonoBehaviour
 
         }
 
-        if(pauseAction.WasPressedThisFrame())
-        {
-
-            if(Pause == false)
-            {
-
-                OnDisable();
-
-            } else
-            {
-
-                OnEnable();
-
-            }
-    
-        }
-
+        
         if(ghostAction.WasPressedThisFrame())
         {
 
             ghost.SetActive(false);
+
+        }
+
+    }
+
+    private void PauseGame()
+    {
+
+        if(pauseActionPlayer.WasPressedThisFrame())
+        {
+
+            InputActions.FindActionMap("Player").Disable();
+            InputActions.FindActionMap("UI").Enable();
+            Pausado.SetActive(true);
+    
+        } else if(pauseActionUI.WasPressedThisFrame())
+        {
+
+            InputActions.FindActionMap("Player").Enable();
+            InputActions.FindActionMap("UI").Disable();
+            Pausado.SetActive(false);
 
         }
 
