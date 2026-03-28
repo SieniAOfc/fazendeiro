@@ -19,8 +19,8 @@ public class MenuPManager : MonoBehaviour
     public void ExitGame()
     {
 
+        print("Saiu");
         Application.Quit();
-
 
     }
 
