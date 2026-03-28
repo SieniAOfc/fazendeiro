@@ -7,15 +7,20 @@ using System.Collections.Generic;
 public class MenuPManager : MonoBehaviour
 {
     
+    [SerializeField] private string nomeLvGame;
+
     public void Play()
     {
         
-        SceneManager.LoadScene("Game");
-
+        SceneManager.LoadScene(nomeLvGame);
+        
     }
 
     public void ExitGame()
     {
+
+        Application.Quit();
+
 
     }
 
