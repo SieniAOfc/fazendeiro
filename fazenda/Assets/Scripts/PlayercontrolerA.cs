@@ -32,21 +32,21 @@ public class PlayerControlerA : MonoBehaviour
 
     private void OnEnable()
     {
-
+        InputActions.FindActionMap("Player").Disable();
+        InputActions.FindActionMap("UI").Disable();
         InputActions.FindActionMap("Player").Enable();
-
+        Time.timeScale = 1f;
+        
     }
 
     private void OnDisable()
     {
-
         InputActions.FindActionMap("Player").Disable();
-
+        InputActions.FindActionMap("UI").Disable();
     }
 
     private void Awake()
     {
-
         moveAction = InputSystem.actions.FindAction("Move");
         fireAction = InputSystem.actions.FindAction("Jump");
         ghostAction = InputSystem.actions.FindAction("ghost");
