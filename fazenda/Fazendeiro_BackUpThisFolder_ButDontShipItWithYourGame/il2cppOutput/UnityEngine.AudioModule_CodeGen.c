@@ -23,6 +23,10 @@ extern void Mobile_StartAudioOutput_m731D1EEEE7A0D56BAADD571BA0FCAC13FB071223 (v
 extern void Mobile_StopAudioOutput_m10B8CEF668EE4967D0AD1D6741B6A37540C28A46 (void);
 extern void AudioClip_InvokePCMReaderCallback_Internal_m766E5705AB5AE16F5F142867CC3758ABE4BF462C (void);
 extern void AudioClip_InvokePCMSetPositionCallback_Internal_m986EF703B7DDE42343730DE93A095D05B9F4DBB8 (void);
+extern void AudioClip_UnityEngine_Audio_GeneratorInstance_ICapabilities_get_isRealtime_mAC78FD95FB9998B38D0E50C2462DC9D9147FEAA4 (void);
+extern void AudioClip_UnityEngine_Audio_GeneratorInstance_ICapabilities_get_isFinite_m20E61329E86505BA44C480115CD9A403FC63308C (void);
+extern void AudioClip_UnityEngine_Audio_GeneratorInstance_ICapabilities_get_length_mCA231C69B56E93689C2B45DCE2C3F0AD45CF541B (void);
+extern void AudioClip_UnityEngine_Audio_IAudioGenerator_CreateInstance_m78256DB80A6F6DB7AEF47DB8A3E827723D228FD5 (void);
 extern void PCMReaderCallback__ctor_mF621B6CC1A4BA6525190C5037401CF2FD5C0CF28 (void);
 extern void PCMReaderCallback_Invoke_m76784C690C36B513E2AA5B0E4FD9831B2C7E5152 (void);
 extern void PCMSetPositionCallback__ctor_mD16F77DDB552EB69BB3F5EF39420B2F09F95455B (void);
@@ -35,7 +39,30 @@ extern void AudioClipPlayable_GetHandle_mEA1D664328FF9B08E4F7D5EBCD4B51A754D97C4
 extern void AudioClipPlayable_Equals_m9C1C75ACBB74FE06AD02BE4643F6EB39413EFF83 (void);
 extern void AudioMixerPlayable_GetHandle_m6C182D9794E901D123223BB57738A302BEAB41FD (void);
 extern void AudioMixerPlayable_Equals_mDFB945EB48199A338BAD00D40FB8EEC34CF64D57 (void);
-static Il2CppMethodPointer s_methodPointers[28] = 
+extern void ControlContext__ctor_mFFC3A14E72F61DACB51F4F771FAE8416702023B6 (void);
+extern void ControlContext_Exists_mEEB0CCB244CABE9EAD81EBC5E54CB6B50E18FA0F (void);
+extern void ControlContext_GetConfiguration_m5EF5175CD07C7E1661F6AC36ECEA52A293DB0249 (void);
+extern void ControlContext_CleanupHeader_mC560997117E3E82A193438753C1020A76A208F5E (void);
+extern void GeneratorInstance_op_Implicit_mB7A6E46130D3BAB42E00F4DD08155EF286A16167 (void);
+extern void GeneratorInstance_Equals_m1FEFD7862F181D69396710522A061AA1A5189FE1 (void);
+extern void GeneratorInstance_Equals_m7412F772B53B5052FF5070FB2BB2099A93270206 (void);
+extern void GeneratorInstance_GetHashCode_mBF9BB29BE3D212AAAEF53A02346FED4B0435C7D2 (void);
+extern void Configuration_get_isRealtime_m99E988C200947A8277C144A84CB1755B5A0C2D78 (void);
+extern void Configuration_get_length_mB699EC1CF6B8A0955A60B55ABB22AD00A3F6BC3B (void);
+extern void ProcessorInstance_Equals_m4873E7D141484FCADC7F0F9C64542D57E0D02398 (void);
+extern void ProcessorInstance_Equals_mFE0F0DA5B311AD6D34EABD73F61C4AE3014084ED (void);
+extern void ProcessorInstance_GetHashCode_m607D39F5BA947B94238348CF61431A9D8049F9B0 (void);
+extern void ScriptableGeneratorBindings_InstantiateGeneratorFromObject_m627DB7836271F2551E83B21A49E39952BA58D7B3 (void);
+extern void ScriptableProcessorBindings_CheckProcessorExists_mCA17BD1A2B9E776034C7B312CA810B3B739AA04E (void);
+extern void ScriptableProcessorBindings_CheckProcessorExistsInternal_mF6C33BA9D06B46EAAA47D05E74BA20CC604141A6 (void);
+extern void ScriptableProcessorBindings_CheckProcessorExistsInternal_Injected_mD29018C86FF29463FEC0346E4D8308F7F6EA1831 (void);
+extern void Handle_get_AtomicNode_m3D7AF7852BDF5999877F8F973FDF8724974B0A50 (void);
+extern void Handle_Equals_m5D8356E5FCA91FFFEACC910C738C37690EBA2E64 (void);
+extern void Handle_Equals_mDE217E745B1016A74BCE82848675ED913B391B8F (void);
+extern void Handle_GetHashCode_m8DD5E2EE5197C1FF37CD2CF3B4FD892A9E299DFE (void);
+extern void Handle_CheckValidOrThrow_mA6C3BAA711CDA462A6A2653A1A2D04CE2AECD3C3 (void);
+extern void Handle_get_ValidAndNotDisposed_m1097F1E099632EDF74478AD5B74978BD3FAEF145 (void);
+static Il2CppMethodPointer s_methodPointers[59] = 
 {
 	AudioSettings_InvokeOnAudioConfigurationChanged_m8273D3AEB24F4C3E374238B6F699BE6696808E85,
 	AudioSettings_InvokeOnAudioSystemShuttingDown_m1B9895D60B3267EBDEC69B9169730DBAD8325E90,
@@ -53,6 +80,10 @@ static Il2CppMethodPointer s_methodPointers[28] =
 	Mobile_StopAudioOutput_m10B8CEF668EE4967D0AD1D6741B6A37540C28A46,
 	AudioClip_InvokePCMReaderCallback_Internal_m766E5705AB5AE16F5F142867CC3758ABE4BF462C,
 	AudioClip_InvokePCMSetPositionCallback_Internal_m986EF703B7DDE42343730DE93A095D05B9F4DBB8,
+	AudioClip_UnityEngine_Audio_GeneratorInstance_ICapabilities_get_isRealtime_mAC78FD95FB9998B38D0E50C2462DC9D9147FEAA4,
+	AudioClip_UnityEngine_Audio_GeneratorInstance_ICapabilities_get_isFinite_m20E61329E86505BA44C480115CD9A403FC63308C,
+	AudioClip_UnityEngine_Audio_GeneratorInstance_ICapabilities_get_length_mCA231C69B56E93689C2B45DCE2C3F0AD45CF541B,
+	AudioClip_UnityEngine_Audio_IAudioGenerator_CreateInstance_m78256DB80A6F6DB7AEF47DB8A3E827723D228FD5,
 	PCMReaderCallback__ctor_mF621B6CC1A4BA6525190C5037401CF2FD5C0CF28,
 	PCMReaderCallback_Invoke_m76784C690C36B513E2AA5B0E4FD9831B2C7E5152,
 	PCMSetPositionCallback__ctor_mD16F77DDB552EB69BB3F5EF39420B2F09F95455B,
@@ -65,56 +96,148 @@ static Il2CppMethodPointer s_methodPointers[28] =
 	AudioClipPlayable_Equals_m9C1C75ACBB74FE06AD02BE4643F6EB39413EFF83,
 	AudioMixerPlayable_GetHandle_m6C182D9794E901D123223BB57738A302BEAB41FD,
 	AudioMixerPlayable_Equals_mDFB945EB48199A338BAD00D40FB8EEC34CF64D57,
+	ControlContext__ctor_mFFC3A14E72F61DACB51F4F771FAE8416702023B6,
+	ControlContext_Exists_mEEB0CCB244CABE9EAD81EBC5E54CB6B50E18FA0F,
+	ControlContext_GetConfiguration_m5EF5175CD07C7E1661F6AC36ECEA52A293DB0249,
+	ControlContext_CleanupHeader_mC560997117E3E82A193438753C1020A76A208F5E,
+	GeneratorInstance_op_Implicit_mB7A6E46130D3BAB42E00F4DD08155EF286A16167,
+	GeneratorInstance_Equals_m1FEFD7862F181D69396710522A061AA1A5189FE1,
+	GeneratorInstance_Equals_m7412F772B53B5052FF5070FB2BB2099A93270206,
+	GeneratorInstance_GetHashCode_mBF9BB29BE3D212AAAEF53A02346FED4B0435C7D2,
+	NULL,
+	NULL,
+	NULL,
+	Configuration_get_isRealtime_m99E988C200947A8277C144A84CB1755B5A0C2D78,
+	Configuration_get_length_mB699EC1CF6B8A0955A60B55ABB22AD00A3F6BC3B,
+	ProcessorInstance_Equals_m4873E7D141484FCADC7F0F9C64542D57E0D02398,
+	ProcessorInstance_Equals_mFE0F0DA5B311AD6D34EABD73F61C4AE3014084ED,
+	ProcessorInstance_GetHashCode_m607D39F5BA947B94238348CF61431A9D8049F9B0,
+	NULL,
+	ScriptableGeneratorBindings_InstantiateGeneratorFromObject_m627DB7836271F2551E83B21A49E39952BA58D7B3,
+	ScriptableProcessorBindings_CheckProcessorExists_mCA17BD1A2B9E776034C7B312CA810B3B739AA04E,
+	ScriptableProcessorBindings_CheckProcessorExistsInternal_mF6C33BA9D06B46EAAA47D05E74BA20CC604141A6,
+	ScriptableProcessorBindings_CheckProcessorExistsInternal_Injected_mD29018C86FF29463FEC0346E4D8308F7F6EA1831,
+	Handle_get_AtomicNode_m3D7AF7852BDF5999877F8F973FDF8724974B0A50,
+	Handle_Equals_m5D8356E5FCA91FFFEACC910C738C37690EBA2E64,
+	Handle_Equals_mDE217E745B1016A74BCE82848675ED913B391B8F,
+	Handle_GetHashCode_m8DD5E2EE5197C1FF37CD2CF3B4FD892A9E299DFE,
+	Handle_CheckValidOrThrow_mA6C3BAA711CDA462A6A2653A1A2D04CE2AECD3C3,
+	Handle_get_ValidAndNotDisposed_m1097F1E099632EDF74478AD5B74978BD3FAEF145,
 };
 extern void AudioClipPlayable_GetHandle_mEA1D664328FF9B08E4F7D5EBCD4B51A754D97C44_AdjustorThunk (void);
 extern void AudioClipPlayable_Equals_m9C1C75ACBB74FE06AD02BE4643F6EB39413EFF83_AdjustorThunk (void);
 extern void AudioMixerPlayable_GetHandle_m6C182D9794E901D123223BB57738A302BEAB41FD_AdjustorThunk (void);
 extern void AudioMixerPlayable_Equals_mDFB945EB48199A338BAD00D40FB8EEC34CF64D57_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
+extern void ControlContext__ctor_mFFC3A14E72F61DACB51F4F771FAE8416702023B6_AdjustorThunk (void);
+extern void ControlContext_Exists_mEEB0CCB244CABE9EAD81EBC5E54CB6B50E18FA0F_AdjustorThunk (void);
+extern void ControlContext_GetConfiguration_m5EF5175CD07C7E1661F6AC36ECEA52A293DB0249_AdjustorThunk (void);
+extern void GeneratorInstance_Equals_m1FEFD7862F181D69396710522A061AA1A5189FE1_AdjustorThunk (void);
+extern void GeneratorInstance_Equals_m7412F772B53B5052FF5070FB2BB2099A93270206_AdjustorThunk (void);
+extern void GeneratorInstance_GetHashCode_mBF9BB29BE3D212AAAEF53A02346FED4B0435C7D2_AdjustorThunk (void);
+extern void Configuration_get_isRealtime_m99E988C200947A8277C144A84CB1755B5A0C2D78_AdjustorThunk (void);
+extern void Configuration_get_length_mB699EC1CF6B8A0955A60B55ABB22AD00A3F6BC3B_AdjustorThunk (void);
+extern void ProcessorInstance_Equals_m4873E7D141484FCADC7F0F9C64542D57E0D02398_AdjustorThunk (void);
+extern void ProcessorInstance_Equals_mFE0F0DA5B311AD6D34EABD73F61C4AE3014084ED_AdjustorThunk (void);
+extern void ProcessorInstance_GetHashCode_m607D39F5BA947B94238348CF61431A9D8049F9B0_AdjustorThunk (void);
+extern void Handle_get_AtomicNode_m3D7AF7852BDF5999877F8F973FDF8724974B0A50_AdjustorThunk (void);
+extern void Handle_Equals_m5D8356E5FCA91FFFEACC910C738C37690EBA2E64_AdjustorThunk (void);
+extern void Handle_Equals_mDE217E745B1016A74BCE82848675ED913B391B8F_AdjustorThunk (void);
+extern void Handle_GetHashCode_m8DD5E2EE5197C1FF37CD2CF3B4FD892A9E299DFE_AdjustorThunk (void);
+extern void Handle_CheckValidOrThrow_mA6C3BAA711CDA462A6A2653A1A2D04CE2AECD3C3_AdjustorThunk (void);
+extern void Handle_get_ValidAndNotDisposed_m1097F1E099632EDF74478AD5B74978BD3FAEF145_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[21] = 
 {
-	{ 0x06000019, AudioClipPlayable_GetHandle_mEA1D664328FF9B08E4F7D5EBCD4B51A754D97C44_AdjustorThunk },
-	{ 0x0600001A, AudioClipPlayable_Equals_m9C1C75ACBB74FE06AD02BE4643F6EB39413EFF83_AdjustorThunk },
-	{ 0x0600001B, AudioMixerPlayable_GetHandle_m6C182D9794E901D123223BB57738A302BEAB41FD_AdjustorThunk },
-	{ 0x0600001C, AudioMixerPlayable_Equals_mDFB945EB48199A338BAD00D40FB8EEC34CF64D57_AdjustorThunk },
+	{ 0x0600001D, AudioClipPlayable_GetHandle_mEA1D664328FF9B08E4F7D5EBCD4B51A754D97C44_AdjustorThunk },
+	{ 0x0600001E, AudioClipPlayable_Equals_m9C1C75ACBB74FE06AD02BE4643F6EB39413EFF83_AdjustorThunk },
+	{ 0x0600001F, AudioMixerPlayable_GetHandle_m6C182D9794E901D123223BB57738A302BEAB41FD_AdjustorThunk },
+	{ 0x06000020, AudioMixerPlayable_Equals_mDFB945EB48199A338BAD00D40FB8EEC34CF64D57_AdjustorThunk },
+	{ 0x06000021, ControlContext__ctor_mFFC3A14E72F61DACB51F4F771FAE8416702023B6_AdjustorThunk },
+	{ 0x06000022, ControlContext_Exists_mEEB0CCB244CABE9EAD81EBC5E54CB6B50E18FA0F_AdjustorThunk },
+	{ 0x06000023, ControlContext_GetConfiguration_m5EF5175CD07C7E1661F6AC36ECEA52A293DB0249_AdjustorThunk },
+	{ 0x06000026, GeneratorInstance_Equals_m1FEFD7862F181D69396710522A061AA1A5189FE1_AdjustorThunk },
+	{ 0x06000027, GeneratorInstance_Equals_m7412F772B53B5052FF5070FB2BB2099A93270206_AdjustorThunk },
+	{ 0x06000028, GeneratorInstance_GetHashCode_mBF9BB29BE3D212AAAEF53A02346FED4B0435C7D2_AdjustorThunk },
+	{ 0x0600002C, Configuration_get_isRealtime_m99E988C200947A8277C144A84CB1755B5A0C2D78_AdjustorThunk },
+	{ 0x0600002D, Configuration_get_length_mB699EC1CF6B8A0955A60B55ABB22AD00A3F6BC3B_AdjustorThunk },
+	{ 0x0600002E, ProcessorInstance_Equals_m4873E7D141484FCADC7F0F9C64542D57E0D02398_AdjustorThunk },
+	{ 0x0600002F, ProcessorInstance_Equals_mFE0F0DA5B311AD6D34EABD73F61C4AE3014084ED_AdjustorThunk },
+	{ 0x06000030, ProcessorInstance_GetHashCode_m607D39F5BA947B94238348CF61431A9D8049F9B0_AdjustorThunk },
+	{ 0x06000036, Handle_get_AtomicNode_m3D7AF7852BDF5999877F8F973FDF8724974B0A50_AdjustorThunk },
+	{ 0x06000037, Handle_Equals_m5D8356E5FCA91FFFEACC910C738C37690EBA2E64_AdjustorThunk },
+	{ 0x06000038, Handle_Equals_mDE217E745B1016A74BCE82848675ED913B391B8F_AdjustorThunk },
+	{ 0x06000039, Handle_GetHashCode_m8DD5E2EE5197C1FF37CD2CF3B4FD892A9E299DFE_AdjustorThunk },
+	{ 0x0600003A, Handle_CheckValidOrThrow_mA6C3BAA711CDA462A6A2653A1A2D04CE2AECD3C3_AdjustorThunk },
+	{ 0x0600003B, Handle_get_ValidAndNotDisposed_m1097F1E099632EDF74478AD5B74978BD3FAEF145_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[28] = 
+static const int32_t s_InvokerIndices[59] = 
 {
-	10297,
-	10605,
-	10605,
-	10502,
-	10502,
-	2969,
-	5681,
-	10502,
-	10297,
-	10502,
-	10297,
-	10502,
-	10605,
-	10605,
-	5800,
-	5763,
-	2969,
-	5800,
-	2969,
-	5763,
-	5763,
-	5763,
-	2969,
-	3011,
-	7242,
-	3860,
-	7242,
-	3861,
+	11871,
+	12259,
+	12259,
+	12136,
+	12136,
+	3351,
+	6566,
+	12136,
+	11871,
+	12136,
+	11871,
+	12136,
+	12259,
+	12259,
+	6707,
+	6659,
+	8240,
+	8240,
+	7914,
+	1231,
+	3351,
+	6707,
+	3351,
+	6659,
+	6659,
+	6659,
+	3351,
+	3398,
+	8395,
+	4465,
+	8395,
+	4466,
+	6548,
+	4626,
+	7029,
+	11870,
+	11700,
+	4531,
+	4605,
+	8329,
+	-1,
+	-1,
+	-1,
+	8240,
+	7914,
+	4626,
+	4605,
+	8329,
+	-1,
+	10241,
+	10407,
+	10407,
+	10367,
+	8223,
+	4542,
+	4605,
+	8329,
+	8527,
+	8240,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AudioModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_AudioModule_CodeGenModule = 
 {
 	"UnityEngine.AudioModule.dll",
-	28,
+	59,
 	s_methodPointers,
-	4,
+	21,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,

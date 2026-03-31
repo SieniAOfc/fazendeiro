@@ -66,7 +66,8 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -80,7 +81,8 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -123,7 +125,8 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -143,7 +146,8 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -163,7 +167,8 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -177,7 +182,8 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -203,7 +209,8 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -211,7 +218,8 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -235,7 +243,8 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -249,7 +258,8 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -281,7 +291,8 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -295,7 +306,8 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -303,7 +315,8 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -334,7 +347,10 @@
           },
           {
             "name": "RectTransform",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -347,7 +363,8 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -379,7 +396,8 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/Level1.unity"
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -406,7 +424,10 @@
           },
           {
             "name": "Sprite",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -466,10 +487,8 @@
           },
           {
             "name": "Transform",
-            "scenes": [
-              "Assets/Scenes/Level1.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -561,6 +580,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.physics2d"
+          },
+          {
+            "name": "Required by PhysicsBackendPhysX Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physicsbackendphysx"
           },
           {
             "name": "Required by Properties Module",
@@ -843,6 +868,12 @@
             "icon": null
           },
           {
+            "name": "Required by PhysicsBackendPhysX Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physicsbackendphysx"
+          },
+          {
             "name": "Required by UIElements Module",
             "scenes": [],
             "dependencyType": 2,
@@ -857,6 +888,17 @@
             "name": "Physics2DSettings",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          }
+        ]
+      },
+      {
+        "name": "PhysicsBackendPhysX",
+        "dependencies": [
+          {
+            "name": "Force included module",
+            "scenes": [],
+            "dependencyType": 3,
             "icon": null
           }
         ]
@@ -981,6 +1023,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.physics2d"
+          },
+          {
+            "name": "Required by PhysicsBackendPhysX Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physicsbackendphysx"
           },
           {
             "name": "Required by Properties Module",
@@ -1130,6 +1178,14 @@
         "dependencies": [
           {
             "name": "Font",
+            "scenes": [
+              "Assets/Scenes/Level1.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "TextMesh",
             "scenes": [],
             "dependencyType": 0,
             "icon": null
@@ -1171,7 +1227,10 @@
         "dependencies": [
           {
             "name": "Canvas",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1183,7 +1242,10 @@
           },
           {
             "name": "CanvasRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Level1.unity",
+              "Assets/Scenes/Menu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
