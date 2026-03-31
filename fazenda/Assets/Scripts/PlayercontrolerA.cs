@@ -113,13 +113,16 @@ public class PlayerControlerA : MonoBehaviour
             InputActions.FindActionMap("Player").Disable();
             InputActions.FindActionMap("UI").Enable();
             Pausado.SetActive(true);
+            Time.timeScale = 0f;
+            
     
         } else if(pauseActionUI.WasPressedThisFrame())
         {
 
-            InputActions.FindActionMap("Player").Enable();
             InputActions.FindActionMap("UI").Disable();
+            InputActions.FindActionMap("Player").Enable();
             Pausado.SetActive(false);
+            Time.timeScale = 1f;
 
         }
 
